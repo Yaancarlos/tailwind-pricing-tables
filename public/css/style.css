@@ -2,3 +2,60 @@
     color: #25DAC5;
 }
 
+.table-4-inp:checked ~ .table-4-check {
+    background: #25DAC5;
+    border-color: #25DAC5;
+}
+
+.table-4-check::before {
+    left: 9px;
+    content: "";
+    left: 5px;
+    width: 6px;
+    position: absolute;
+    height: 12px;
+    border: solid #1E0E62;
+    display: block;
+    visibility: hidden;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.table-4-inp:checked ~ .table-4-check::before {
+    visibility: visible;
+}
+
+.table-6-inp:checked  ~ .table-6-check {
+    background: #25DAC5;
+    border-color: #25DAC5;
+}
+
+.table-6-check {
+
+}
+
+.table-6-check::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.table-6-inp:checked  ~ .table-6-check::after{
+    left: 28px;
+}

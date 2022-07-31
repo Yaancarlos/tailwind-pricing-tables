@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./public/css/output.css">
     <script src="https://kit.fontawesome.com/d251fb0e6a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="px-5 py-8 sm:px-10 sm:py-14 md:px-14 md:py-20 lg:py-24 xl:px-28 text-center">
@@ -195,76 +196,492 @@
         </div>
     </div>
     <div class="w-full h-12 bg-gray-200"></div>
-    <div class="px-5 py-8 text-white bg-cover bg-no-repeat bg-center bg-blend-soft-light sm:px-10 sm:py-14 md:px-14 md:py-20 lg:py-24 xl:px-28 text-center" style="background-image:linear-gradient(#2e1893,rgba(46, 24, 147, 0.759)), url(./public/img/bg-table-4.png);">
-        <h1 class="font-medium md:font-bold text-xl sm:text-2xl md:text-3xl mb-5 lg:text-4xl">Plans & Pricing</h1>
-        <p class="font-normal md:font-medium max-w-xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl">Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
-        <div class="grid grid-cols-1 mt-16 max-w-7xl mx-auto gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="card-2 hover:outline hover:shadow-lg hover:outline-1 rounded-lg hover:outline-emerald">
-                <div class="p-5 card-2-content flex flex-col items-center lg:py-12">
-                    <h2 class="text-lg lg:text-xl font-medium">Starter</h2>
-                    <p class="text-xs md:text-sm lg:text-base font-normal">$9.99/month</p>
-                    <div class="px-14 py-14 text-7xl bg-gray-200 rounded-full inline-block my-10 text-gray-400">
-                        <i class="fa-solid fa-bomb"></i>                    
-                    </div>    
-                    <a href="javascript:void(0)" class="inline-block text-sm sm:text-base font-medium hover:text-white hover:bg-emerald hover:border-emerald transition-colors px-5 py-2 border-2 rounded-full bg-white">Get Started</a>
+    <div class="px-5 py-8 sm:px-10 sm:py-14 md:px-14 md:py-20 lg:py-24 xl:px-28 text-center">
+        <h1 class="font-medium md:font-bold text-xl sm:text-2xl text-violet md:text-3xl mb-16 lg:text-4xl">Do more with Startup Framework</h1>
+        <div class="overflow-x-auto">
+            <table class="w-full border-collapse min-w-[850px] mx-auto max-w-6xl table-fixed">
+                <tr class="bg-gray-100">
+                    <th class="rounded-tl-lg"></th>
+                    <th class="py-8 border-x border-gray-300 px-5 text-violet">
+                        <h3 class="text-base mb-2 md:text-lg font-medium">Basic Plan</h3>
+                        <p class="text-sm md:text-base font-normal">All the basic for starting a new business</p>
+                    </th>
+                    <th class="text-violet border-gray-300 border-r">
+                        <h3 class="text-base mb-2 md:text-lg font-medium">Pro Plan</h3>
+                        <p class="text-sm md:text-base font-normal">Everything you need for a growing business</p>
+                    </th>
+                    <th class="text-violet rounded-tr-lg px-5">
+                        <h3 class="text-base mb-2 md:text-lg font-medium">Company Plan</h3>
+                        <p class="text-sm md:text-base font-normal">Perfect for companies agecies & teams</p>
+                    </th>
+                </tr>
+                <tr class="border border-gray-300">
+                    <td class="text-right pr-5 py-14">
+                        <p class="text-xs sm:text-sm tracking-widest text-gray-300 font-medium md:font-bold">PRICE</p>
+                    </td>
+                    <td class="border-gray-300 border-x">
+                        <div class="text-violet">
+                            <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                            <p class="font-medium inline-block text-3xl sm:text-5xl ">19</p>
+                        </div>   
+                    </td>
+                    <td class="border-gray-300 border-r">
+                        <div class="text-violet">
+                            <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                            <p class="font-medium inline-block text-3xl sm:text-5xl ">49</p>
+                        </div>   
+                    </td>
+                    <td>
+                        <div class="text-violet">
+                            <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                            <p class="font-medium inline-block text-3xl sm:text-5xl ">99</p>
+                        </div>   
+                    </td>
+                </tr>
+                <tr class="border-b border-x border-gray-300">
+                    <td class="text-right pr-5 py-5">
+                        <p class="text-xs sm:text-sm tracking-widest text-gray-300 font-medium md:font-bold">HOSTED PROJECTS</p>
+                    </td>
+                    <td class="border-gray-300 border-x">
+                        <p class="text-violet text-sm sm:text-base font-normal">Unlimited</p>
+                    </td>
+                    <td class="border-gray-300 border-r">
+                        <p class="text-violet text-sm sm:text-base font-normal">Unlimited</p>
+                    </td>
+                    <td>
+                        <p class="text-violet text-sm sm:text-base font-normal">Unlimited</p>
+                    </td>
+                </tr>
+                <tr class="border-b border-x border-gray-300">
+                    <td class="text-right pr-5 py-5">
+                        <p class="text-xs sm:text-sm tracking-widest text-gray-300 font-medium md:font-bold">UNHOSTED PROJECTS</p>
+                    </td>
+                    <td class="border-gray-300 border-x">
+                        <p class="text-violet text-sm sm:text-base font-normal">2</p>
+                    </td>
+                    <td class="border-gray-300 border-r">
+                        <p class="text-violet text-sm sm:text-base font-normal">10</p>
+                    </td>
+                    <td>
+                        <p class="text-violet text-sm sm:text-base font-normal">Unlimited</p>
+                    </td>
+                </tr>
+                <tr class="border-b border-x border-gray-300">
+                    <td class= "text-right pr-5 py-5">
+                        <p class="text-xs sm:text-sm tracking-widest text-gray-300 font-medium md:font-bold">BILLING</p>
+                    </td>
+                    <td class="border-gray-300 border-x">
+                        <label for="table-4-1" class="relative">
+                            <input type="checkbox" disabled name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-1">
+                            <span class="table-4-check absolute bg-gray-200 w-5 h-5 rounded-md border-2 border-solid border-gray-200 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>
+                    </td>
+                    <td class="border-gray-300 border-r">
+                        <label for="table-4-2" class="relative">
+                            <input type="checkbox" disabled checked name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-2">
+                            <span class="table-4-check absolute w-5 h-5 rounded-md border-2 border-solid border-gray-300 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                
+                    </td>
+                    <td>
+                        <label for="table-4-3" class="relative">
+                            <input type="checkbox" disabled checked name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-3">
+                            <span class="table-4-check absolute w-5 h-5 rounded-md border-2 border-solid border-gray-300 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                
+                    </td>
+                </tr>
+                <tr class="border-b border-x border-gray-300">
+                    <td class="text-right pr-5 py-5">
+                        <p class="text-xs sm:text-sm tracking-widest text-gray-300 font-medium md:font-bold">SUPPORT</p>
+                    </td>
+                    <td class="border-gray-300 border-x">
+                        <p class="text-violet text-sm sm:text-base font-normal">Forum</p>
+                    </td>
+                    <td class="border-gray-300 border-r">
+                        <p class="text-violet text-sm sm:text-base font-normal">Chat</p>
+                    </td>
+                    <td>
+                        <p class="text-violet text-sm sm:text-base font-normal">Phone call</p>
+                    </td>
+                </tr>
+                <tr class="border-b border-x border-gray-300">
+                    <td class="text-right pr-5 py-5">
+                        <p class="text-xs sm:text-sm tracking-widest text-gray-300 font-medium md:font-bold">CUSTOM DOMEN</p>
+                    </td>
+                    <td class="border-gray-300 border-x">
+                        <label for="table-4-1" class="relative">
+                            <input type="checkbox" disabled name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-1">
+                            <span class="table-4-check absolute bg-gray-200 w-5 h-5 rounded-md border-2 border-solid border-gray-200 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                
+                    </td>
+                    <td class="border-gray-300 border-r">
+                        <label for="table-4-1" class="relative">
+                            <input type="checkbox" disabled name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-1">
+                            <span class="table-4-check absolute bg-gray-200 w-5 h-5 rounded-md border-2 border-solid border-gray-200 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                
+                    </td>
+                    <td>
+                        <label for="table-4-3" class="relative">
+                            <input type="checkbox" disabled checked name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-3">
+                            <span class="table-4-check absolute w-5 h-5 rounded-md border-2 border-solid border-gray-300 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                  
+                    </td>
+                </tr>
+                <tr class="border-b border-x border-gray-300">
+                    <td class="text-right pr-5 py-5">
+                        <p class="text-xs sm:text-sm tracking-widest text-gray-300 font-medium md:font-bold">DASHBOARD</p>
+                    </td>
+                    <td class="border-gray-300 border-x">
+                        <label for="table-4-1" class="relative">
+                            <input type="checkbox" disabled name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-1">
+                            <span class="table-4-check absolute bg-gray-200 w-5 h-5 rounded-md border-2 border-solid border-gray-200 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                
+                    </td>
+                    <td class="border-gray-300 border-r"> 
+                        <label for="table-4-1" class="relative">
+                            <input type="checkbox" disabled name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-1">
+                            <span class="table-4-check absolute bg-gray-200 w-5 h-5 rounded-md border-2 border-solid border-gray-200 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                
+                    </td>
+                    <td>
+                        <label for="table-4-3" class="relative">
+                            <input type="checkbox" disabled checked name="" class="table-4-inp absolute w-0 h-0 opacity-0 top-0 left-0" id="table-4-3">
+                            <span class="table-4-check absolute w-5 h-5 rounded-md border-2 border-solid border-gray-300 cursor-pointer -translate-y-1/2 -translate-x-1/2"></span>
+                        </label>                  
+                    </td>
+                </tr>
+                <tr class="border-b border-x border-gray-300">
+                    <td class="rounded-bl-lg"></td>
+                    <td class="border-x border-gray-300 py-10">
+                        <a href="javascript:void(0)" class="text-violet text-sm md:text-md px-5 hover:bg-violet hover:border-violet transition-colors hover:text-white py-2 border-2 border-gray-300 rounded-full border-solid font-normal md:font-medium">Get Started for Free</a>
+                    </td>
+                    <td class="border-r border-gray-300 py-7">
+                        <a href="javascript:void(0)" class="text-white bg-emerald text-sm md:text-md hover:bg-rose-500 hover:border-rose-500 transition-colors px-5 py-2 border-2 border-emerald rounded-full border-solid font-normal md:font-medium">Get Started for Free</a>
+                    </td>
+                    <td class="rounded-br-lg py-7">
+                        <a href="javascript:void(0)" class="text-violet text-sm md:text-md px-5 hover:bg-violet hover:border-violet hover:text-white transition-colors py-2 border-2 border-gray-300 rounded-full border-solid font-normal md:font-medium">Get Started for Free</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="w-full h-12 bg-gray-200"></div>
+    <div class="px-5 text-white py-8 text-white bg-cover bg-no-repeat bg-center bg-blend-soft-light sm:px-10 sm:py-14 md:px-14 md:py-20 lg:py-24 xl:px-28" style="background-image:linear-gradient(#2e1893,rgba(46, 24, 147, 0.759)), url(./public/img/bg-table-4.png);">
+        <h1 class="font-medium text-center md:font-bold text-xl sm:text-2xl md:text-3xl mb-5 lg:text-4xl">Plans & Pricing</h1>
+        <p class="font-normal text-center md:font-medium max-w-xl mx-auto text-sm sm:text-base md:text-lg lg:text-xl">Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
+        <div class="grid grid-cols-1 mt-16 max-w-7xl mx-auto gap-6 lg:gap-12 md:grid-cols-2 xl:grid-cols-3">
+            <div class="border-2 border-solid rounded-lg p-14 py-26 border-white/[.5]">
+                <span class="text-base sm:text-lg md:text-xl font-medium">Starter</span>
+                <div class="my-10">
+                    <p class="font-medium inline-block text-3xl sm:text-5xl ">9.99</p>
+                    <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                </div>  
+                <ul class="flex w-full flex-col items-start gap-4">
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">2 GB of space</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">14 days of backups</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Social integrations</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Client billing</p>
+                    </li>
+                    <li class="pl-7">
+                        <p class="opacity-70 text-sm md:text-base">Remote access</p>
+                    </li>
+                    <li class="pl-7">
+                        <p class="opacity-70 text-sm md:text-base">Custom domain</p>
+                    </li>
+                    <li class="pl-7">
+                        <p class="opacity-70 text-sm md:text-base">24 hours support</p>
+                    </li>
+                    <li class="pl-7">
+                        <p class="opacity-70 text-sm md:text-base">Admin tools</p>
+                    </li>
+                    <li class="pl-9">
+                        <p class="opacity-70 text-sm md:text-base">Collaboration tools</p>
+                    </li>
+                    <li class="pl-9">
+                        <p class="opacity-70 text-sm md:text-base">User management</p>
+                    </li>
+                    <li class="md:pl-9 w-full text-center inline-block mt-6">
+                        <a href="javascript:void(0)" class="font-normal hover:bg-rose-500 hover:border-rose-500 transition-colors inline-block  w-full text-base sm:text-lg px-5 py-2 border-2 border-solid border-white/[.7] rounded-full md:font-medium">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="border-2 border-solid rounded-lg p-14 py-26 border-white/[.5]">
+                <span class="text-base sm:text-lg md:text-xl font-medium">Professional</span>
+                <div class="my-10">
+                    <p class="font-medium inline-block text-3xl sm:text-5xl ">19.99</p>
+                    <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                </div>  
+                <ul class="flex w-full flex-col items-start gap-4">
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">2 GB of space</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">14 days of backups</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Social integrations</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Client billing</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Remote access</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Custom domain</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">24 hours support</p>
+                    </li>
+                    <li class="pl-7">
+                        <p class="opacity-70 text-sm md:text-base">Admin tools</p>
+                    </li>
+                    <li class="pl-9">
+                        <p class="opacity-70 text-sm md:text-base">Collaboration tools</p>
+                    </li>
+                    <li class="pl-9">
+                        <p class="opacity-70 text-sm md:text-base">User management</p>
+                    </li>
+                    <li class="md:pl-9 w-full text-center inline-block mt-6">
+                        <a href="javascript:void(0)" class="font-normal inline-block hover:bg-rose-600 hover:border-rose-600 transition-colors w-full text-base sm:text-lg px-5 py-2 border-2 border-solid border-rose-500 bg-rose-500 rounded-full md:font-medium">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="border-2 border-solid rounded-lg p-14 lg:py-26 border-white/[.5]">
+                <span class="text-base sm:text-lg md:text-xl font-medium">Team</span>
+                <div class="my-10">
+                    <p class="font-medium inline-block text-3xl sm:text-5xl ">49.99</p>
+                    <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                </div>  
+                <ul class="flex w-full flex-col items-start gap-4">
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">2 GB of space</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">14 days of backups</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Social integrations</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Client billing</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Remote access</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Custom domain</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">24 hours support</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Admin tools</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Collaboration tools</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">User management</p>
+                    </li>
+                    <li class="md:pl-9 w-full text-center inline-block mt-6">
+                        <a href="javascript:void(0)" class="font-normal inline-block transition-colors w-full text-base sm:text-lg px-5 py-2 border-2 border-solid border-white/[.7] hover:border-rose-500 hover:bg-rose-500 rounded-full md:font-medium">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-12 bg-gray-200"></div>
+    <div class="px-5 py-8 sm:px-10 sm:py-14 md:px-14 md:py-20 lg:py-24 xl:px-28">
+        <h1 class="font-medium text-violet text-center md:font-bold text-xl max-w-xl mx-auto sm:text-2xl md:text-3xl mb-5 lg:text-4xl">Simple & Flexible pricing built for everyone</h1>
+        <p class="font-normal text-center text-gray-300 md:font-medium text-sm sm:text-base">Start whit 14-day free trial. No credit card Needed. Cancel at anytime</p>
+        <div class="grid grid-cols-1 mt-16 max-w-7xl mx-auto gap-6 lg:gap-12 md:grid-cols-2 xl:grid-cols-3">
+            <div>
+               <div class="border-solid border-2 border-gray-200 rounded-lg py-12 px-16">
+                    <span class="text-base text-violet sm:text-lg table mx-auto md:text-xl font-medium">START</span>
+                    <div class="flex gap-7 justify-center my-8 text-violet">
+                        <div>
+                            <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                            <p class="font-medium inline-block text-5xl ">19</p>
+                        </div>
+                        <ul>
+                            <li><p>per user</p></li>
+                            <li><p>per month</p></li>
+                        </ul> 
+                    </div>
+                    <p class="text-gray-300 text-center">All the features you need to keep your personal files safe, accessible, and easy to share.</p>
+               </div>
+               <ul class="flex w-full md:pl py-10 pl-8 md:pl-14 2xl:pl-24 flex-col items-start gap-4">
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">2 GB of hosting space</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">14 days of free backups</p>
+                    </li>
+                    <li class="pl-8">
+                        <p class="text-gray-200 text-sm md:text-base">Social integrations</p>
+                    </li>
+                    <li class="pl-8">
+                        <p class="text-gray-200 text-sm md:text-base">Advanced Client billing</p>
+                    </li>
+                    <li class="mt-4 w-full md:pl-8">
+                        <a href="javascript:void(0)" class="font-normal text-center sm:w-fit w-full block text-violet text-base md:text-lg px-5 py-2 border-2 border-solid border-gray-200 hover:bg-emerald hover:text-white hover:border-emerald transition-colors rounded-full md:font-medium">Start Free Trial</a>
+                    </li>
+               </ul>
+            </div>
+            <div>
+                <div class="bg-page text-white rounded-lg py-12 px-16">
+                     <span class="text-base sm:text-lg table mx-auto md:text-xl font-medium">START</span>
+                     <div class="flex gap-7 justify-center my-8">
+                         <div>
+                             <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                             <p class="font-medium inline-block text-5xl ">49</p>
+                         </div>
+                         <ul>
+                             <li><p>per user</p></li>
+                             <li><p>per month</p></li>
+                         </ul> 
+                     </div>
+                     <p class="text-gray-300 text-center">All the features you need to keep your personal files safe, accessible, and easy to share.</p>
                 </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Up to 10 Members</p>
+                <ul class="flex w-full py-10 pl-8 md:pl-14 2xl:pl-24 flex-col items-start gap-4">
+                     <li class="inline-flex gap-3">
+                         <i class="bi text-green-500 bi-check-lg"></i>
+                         <p class="text-sm md:text-base">2 GB of hosting space</p>
+                     </li>
+                     <li class="inline-flex gap-3">
+                         <i class="bi text-green-500 bi-check-lg"></i>
+                         <p class="text-sm md:text-base">14 days of free backups</p>
+                     </li>
+                     <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Social integrations</p>
+                    </li>
+                    <li class="pl-8">
+                        <p class="text-gray-200 text-sm md:text-base">Advanced Client billing</p>
+                    </li>
+                     <li class="mt-4 w-full md:pl-8">
+                         <a href="javascript:void(0)" class="font-normal text-center sm:w-fit w-full block text-violet text-base md:text-lg px-5 py-2 border-2 border-solid border-emerald bg-emerald hover:bg-rose-500 hover:border-rose-500 text-white transition-colors rounded-full md:font-medium">Start Free Trial</a>
+                     </li>
+                </ul>
+             </div>           <div>
+                <div class="border-solid border-2 border-gray-200 rounded-lg py-12 px-16">
+                     <span class="text-base text-violet sm:text-lg table mx-auto md:text-xl font-medium">START</span>
+                     <div class="flex gap-7 justify-center my-8 text-violet">
+                         <div>
+                             <sup class="align-top top-2 font-normal text-xs sm:text-sm">$</sup>
+                             <p class="font-medium inline-block text-5xl ">99</p>
+                         </div>
+                         <ul>
+                             <li><p>per user</p></li>
+                             <li><p>per month</p></li>
+                         </ul> 
+                     </div>
+                     <p class="text-gray-300 text-center">All the features you need to keep your personal files safe, accessible, and easy to share.</p>
                 </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Backups for 2 Months</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">250 mb per File</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">1000 Messages</p>
+                <ul class="flex w-full py-10 pl-8 md:pl-14 2xl:pl-24 flex-col items-start gap-4">
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">2 GB of hosting space</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">14 days of free backups</p>
+                    </li>
+                    <li class="inline-flex gap-3">
+                       <i class="bi text-green-500 bi-check-lg"></i>
+                       <p class="text-sm md:text-base">Social integrations</p>
+                   </li>
+                    <li class="inline-flex gap-3">
+                        <i class="bi text-green-500 bi-check-lg"></i>
+                        <p class="text-sm md:text-base">Advanced Client billing</p>
+                    </li>
+                     <li class="mt-4 w-full md:pl-8">
+                         <a href="javascript:void(0)" class="font-normal text-center sm:w-fit w-full block text-violet text-base md:text-lg px-5 py-2 border-2 border-solid border-gray-200 rounded-full hover:bg-emerald hover:text-white hover:border-emerald transition-colors md:font-medium">Start Free Trial</a>
+                     </li>
+                </ul>
+             </div>
+        </div>
+    </div>
+    <div class="w-full h-12 bg-gray-200"></div>
+    <div class="px-5 py-8 sm:px-10 sm:py-14 md:px-14 md:py-20 lg:py-24 xl:px-28">
+        <div class="max-w-xl mx-auto">
+            <h1 class="font-medium text-violet text-center md:font-bold text-xl sm:text-2xl md:text-3xl mb-5 lg:text-4xl">Simple Membership</h1>
+            <p class="font-normal text-center text-gray-300 md:font-medium text-sm sm:text-base">Use the Startup Framework for Free with no limits</p>
+        </div>
+        <div class="flex gap-5 mt-10 justify-center items-center text-violet">
+            <p class="text-base">Montly</p>
+            <label for="mth-year" class="relative pl-10">
+                <input type="checkbox" name="" class="table-6-inp absolute top-0 left-0 w-0 h-0 opacity-0" id="mth-year">
+                <span class="w-14 absolute table-6-check bg-violet border -translate-x-1.5 top-0 left-0 rounded-full cursor-pointer -translate-y-1/2 h-7"></span>
+            </label>
+            <p class="text-emerald text-base">Yearly</p>
+        </div>
+        <div class="grid grid-cols-1 max-w-3xl mt-16 mx-auto justify-items-center sm:grid-cols-2 grid-rows-2 gap-5 md:gap-8 sm:grid-rows-1">
+            <div class="w-full max-w-[370px]">
+                <div class="w-full bg-center bg-cover bg-no-repeat rounded-t-lg h-52" style="background-image: url(./public/img/Mask\ \(3\).png);"></div>
+                <div class="border-x-2 border-gray-200 rounded-b-lg px-10 py-12 border-b-2">
+                    <div class="flex text-violet  justify-between w-full">
+                        <h2 class="font-medium text-base md:text-lg lg:text-xl">Starter</h2>
+                        <span class="block font-medium text-base md:text-lg lg:text-xl">$19</span>
+                    </div>
+                    <p class="text-gray-200 text-sm my-5 sm:text-base">Unlimited recipes, plans, programs and more. All you need to make eating healthy ridiculously.</p>
+                    <a href="javascript:void(0)" class="text-white block bg-rose-500 w-full text-center py-2 hover:bg-emerald transition-colors rounded-full">Get Started for Free</a>
                 </div>
             </div>
-            <div class="card-2 hover:outline hover:shadow-lg hover:outline-1 rounded-lg hover:outline-emerald">
-                <div class="p-5 card-2-content flex flex-col items-center  lg:py-12">
-                    <h2 class="text-lg lg:text-xl font-medium">Standart</h2>
-                    <p class="text-xs md:text-sm lg:text-base font-normal">$19.99/month</p>
-                    <div class="px-14 py-14 text-7xl bg-gray-200 rounded-full inline-block my-10 text-gray-400">
-                        <i class="fa-solid fa-heart"></i>
-                    </div>     
-                    <a href="javascript:void(0)" class="text-white text-sm sm:text-base font-medium hover:bg-rose-500 hover:border-rose-500 border-emerald transition-colors px-5 py-2 border-2 bg-emerald rounded-full bg-emerald">Get Started</a>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Up to 20 Members</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Backups for 6 Months</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Unlimited Size per File</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Unlimited Messages</p>
+            <div class="w-full max-w-[370px]">
+                <div class="w-full bg-center bg-cover bg-no-repeat rounded-t-lg h-52" style="background-image: url(./public/img/Mask\ \(4\).png);"></div>
+                <div class="border-x-2 border-gray-200 rounded-b-lg px-10 py-12 border-b-2">
+                    <div class="flex text-violet  justify-between w-full">
+                        <h2 class="font-medium text-base md:text-lg lg:text-xl">Professional</h2>
+                        <span class="block font-medium text-base md:text-lg lg:text-xl">$49</span>
+                    </div>
+                    <p class="text-gray-200 text-sm my-5 sm:text-base">Unlimited recipes, plans, programs and more. All you need to make eating healthy ridiculously.</p>
+                    <a href="javascript:void(0)" class="hover:text-white text-violet bg-white border-2 border-solid transition-colors border-gray-200 hover:border-rose-500 block hover:bg-rose-500 w-full text-center py-2 rounded-full">Get Started for Free</a>
                 </div>
             </div>
-            <div class="card-2 hover:outline hover:shadow-lg hover:outline-1 rounded-lg hover:outline-emerald">
-                <div class="p-5 card-2-content flex flex-col items-center lg:py-12">
-                    <h2 class=" text-lg lg:text-xl font-medium">Enterprise</h2>
-                    <p class="text-xs md:text-sm lg:text-base font-normal">$49.99/month</p>
-                    <div class="px-16 py-14 text-7xl bg-gray-200 rounded-full inline-block my-10 text-gray-400">
-                        <i class="fa-solid fa-building"></i>
-                    </div>     
-                    <a href="javascript:void(0)" class="inline-block text-sm sm:text-base font-medium hover:text-white hover:bg-emerald hover:border-emerald transition-colors px-5 py-2 border-2 rounded-full bg-white">Get Started</a>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Up to 20 Members</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Backups for 12 Months</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Unlimited Size per File</p>
-                </div>
-                <div class="">
-                    <p class="text-sm sm:text-base lg:text-lg py-3">Unlimited Messages</p>
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="w-full h-12 bg-gray-200"></div>
+    <div class="px-5 py-8 sm:px-10 sm:py-14 md:px-14 md:py-20 lg:py-24 xl:px-28">
+        <div class="max-w-xl mx-auto">
+            <h1 class="font-medium text-violet text-center md:font-bold text-xl sm:text-2xl md:text-3xl mb-5 lg:text-4xl">Not sure how much you'll send</h1>
+            <p class="font-normal text-center text-gray-300 md:font-medium text-sm sm:text-base">Use the Startup Framework for Free with no limits</p>
+        </div>
+        <div class="max-w-xl border-2 border-solid border-gray-200 rounded-lg mt-16 text-center p-6 md:p-10 mx-auto">
+            <h2 class="text-violet font-medium text-base md:text-lg lg:text-xl">Free Plan</h2>
+            <span class="text-violet my-5 font-medium md:font-bold text-xs sm:text-sm block tracking-widest">20.000 CUSTOMERS</span>
+            <p class="text-sm mb-5 max-w-[355px] mx-auto md:text-lg font-normal md:font-medium text-gray-300">Startup Framework is free forever — you only pay for custom domain hosting or to export your site.</p>
+            <a href="javascrit:void(0)" class="block bg-indigo-500 w-full sm:w-fit mx-auto rounded-full px-7 text-sm md:text-lg text-white py-2.5">Sign in</a>
         </div>
     </div>
 </body>
